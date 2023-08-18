@@ -3,7 +3,7 @@
 		<style type="text/css">
 			@font-face {
 			    font-family: Roboto;
-			    src: url('./Roboto-Bold.ttf');
+			    src: url('https://spotify-playing-letti42.onrender.com/Roboto-Bold.ttf');
 			}
 		</style>
 	</defs>

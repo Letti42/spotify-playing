@@ -10,7 +10,7 @@ app.listen(5000);
 
 const client_id = process.env.CLIENT_ID;
 const secret = process.env.SECRET;
-const host = "http://localhost:5000";
+const host = "https://spotify-playing-letti42.onrender.com";
 
 var access_token;
 var refreshToken;
@@ -71,13 +71,25 @@ app.get('/callback1', async (req, res) => {
     res.redirect("/done")
 });
 
-
-
-
-
 app.get('/done', (req, res) => {
     res.send('Done! THanks for doing this hah ai  have all ur info');
 })
+
+
+app.use("/", express.static("web"));
+app.get("/player.svg", (req,res)=>{
+  res.set("Content-Type", "image/svg+xml");
+  res.sendFile(__dirname+"/web/player.svg");
+})
+
+
+app.get('/', (req,res)=>{
+    res.send("hello!");
+})
+
+setInterval(()=>{
+    fetch(host);
+  }, (1000 * 60)) // request page to stay up every minute
 
 async function coolRefresh() {
     var authOptions = {
@@ -110,8 +122,9 @@ setInterval(async()=>{
     let t = await getPlayingTrack(access_token);
     if(t == null)return pauseTrack();
     if(t?.item == null)return pauseTrack();
+    setLink(t);
     fs.writeFileSync("track.json", JSON.stringify(t));
-    svg.createSvg();
+    svg.createSvg(host);
 }, (1000*10)); // 10 seconds get the playing track
 
 
@@ -121,6 +134,11 @@ async function isMyUser(ac) {
     return user?.email === process.env.EMAIL;
 }
 
+function setLink(t){
+    app.get("/link/player", (req,res)=>{
+      res.redirect(t?.item?.external_urls?.spotify);
+    })
+  }
 
 function pauseTrack(){
     let json = JSON.parse(fs.readFileSync("track.json", "utf-8"));
