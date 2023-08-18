@@ -1,11 +1,13 @@
 const querystring = require('node:querystring');
 const request = require('request');
+const cors = require('cors');
 const fs = require('fs');
 const svg = require('./svg');
 require('./track');
 require('dotenv').config()
 const express = require('express');
 const app = express();
+app.use(cors());
 app.listen(5000);
 
 const client_id = process.env.CLIENT_ID;
