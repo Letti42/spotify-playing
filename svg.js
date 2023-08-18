@@ -91,8 +91,8 @@ async function createSvg(host){
 </svg>
 `;
 
-    let temp = fs.readFileSync("temp.svg", "utf-8");
-    fs.writeFileSync("player.svg", temp+style+svg);
+    let temp = fs.readFileSync("web/temp.svg", "utf-8");
+    fs.writeFileSync("web/player.svg", temp+style+svg);
 }
 
 
