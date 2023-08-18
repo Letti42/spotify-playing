@@ -1,0 +1,5 @@
+.env
+node_modules
+track.svg
+track.json
+index.html

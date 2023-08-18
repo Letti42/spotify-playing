@@ -1,0 +1,109 @@
+<svg width="310px" height="410px" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style type="text/css">
+			@font-face {
+			    font-family: Roboto;
+			    src: url('./Roboto-Bold.ttf');
+			}
+		</style>
+	</defs>
+	<style>
+		.track{
+		    font-size:20px;
+		    text-align:center;
+		    fill:#a9fef7;
+		    font-weight:bold;
+            font-family:'Roboto'
+		}
+		.artist{
+		    font-size:18px;
+		    text-align:center;
+		    fill:#d83b7d;
+		    font-weight:bold;
+            font-family:'Roboto'
+		}
+		.time{
+		    font-size:12px;
+		    fill:#696969;
+		    font-weight:bold;
+            font-family:'Roboto';
+		}
+
+		.one{
+			font-size:7px;
+			font-family:'Roboto';
+			font-weight:bold;
+			fill:#21ca1e;
+		}
+		
+		.min, .sec_ten, .sec_one{
+			opacity:0;
+		}
+
+		.sec_one{
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		.sec_ten{
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		.min{
+            animation-duration: 600s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		@keyframes move{
+            0%{
+                transform:translateX(0px);
+            }
+            100%{
+                transform:translateX(250px);
+            }
+        }
+
+		@keyframes addWidth{
+			0%{
+				width:0px;
+			}
+			100%{
+				width:250px;
+			}
+		}
+
+		@keyframes seconds_one{
+			0%{
+				opacity:1;
+			}
+			10%, 100%{
+				opacity:0;
+			}
+		}
+
+		@keyframes seconds_ten{
+			0%{
+				opacity:1;
+			}
+
+			16.667%, 100%{
+				opacity:0;
+			}
+		}
+		@keyframes minutes{
+			0%{
+				opacity:1;
+			}
+
+			10%, 100%{
+				opacity:0;
+			}
+		}
+	</style>
+	<!-- Rounded corner rectangle -->
+	<rect x="5" y="5" width="300" height="400" rx="20" fill="#202020" />
+

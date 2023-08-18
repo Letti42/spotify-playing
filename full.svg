@@ -1,0 +1,308 @@
+<svg width="310px" height="410px" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style type="text/css">
+			@font-face {
+			    font-family: Roboto;
+			    src: url('./Roboto-Bold.ttf');
+			}
+		</style>
+	</defs>
+	<style>
+		.track{
+		    font-size:20px;
+		    text-align:center;
+		    fill:#a9fef7;
+		    font-weight:bold;
+            font-family:'Roboto'
+		}
+		.artist{
+		    font-size:18px;
+		    text-align:center;
+		    fill:#d83b7d;
+		    font-weight:bold;
+            font-family:'Roboto'
+		}
+		.time{
+		    font-size:12px;
+		    fill:#696969;
+		    font-weight:bold;
+            font-family:'Roboto';
+		}
+
+		.one{
+			font-size:7px;
+			font-family:'Roboto';
+			font-weight:bold;
+			fill:#21ca1e;
+		}
+		
+		.min, .sec_ten, .sec_one{
+			opacity:0;
+		}
+
+		.sec_one{
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		.sec_ten{
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		.min{
+            animation-duration: 600s;
+            animation-iteration-count: infinite;
+			animation-timing-function: step-end;
+		}
+
+		@keyframes move{
+            0%{
+                transform:translateX(0px);
+            }
+            100%{
+                transform:translateX(250px);
+            }
+        }
+
+		@keyframes addWidth{
+			0%{
+				width:0px;
+			}
+			100%{
+				width:250px;
+			}
+		}
+
+		@keyframes seconds_one{
+			0%{
+				opacity:1;
+			}
+			10%, 100%{
+				opacity:0;
+			}
+		}
+
+		@keyframes seconds_ten{
+			0%{
+				opacity:1;
+			}
+
+			16.667%, 100%{
+				opacity:0;
+			}
+		}
+		@keyframes minutes{
+			0%{
+				opacity:1;
+			}
+
+			10%, 100%{
+				opacity:0;
+			}
+		}
+	</style>
+	<!-- Rounded corner rectangle -->
+	<rect x="5" y="5" width="300" height="400" rx="20" fill="#202020" />
+
+
+    <style>
+
+        .startMoving{
+            animation-name:move;
+            animation-duration: 207.454s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: -100.671s;
+        }
+
+        .startWidth{
+            animation-name:addWidth;
+            animation-duration: 207.454s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: -100.671s;
+        }
+
+
+    </style>
+    <style>.so0{
+            animation-delay:-110.671s;
+            animation-name:seconds_one;
+        }
+        .so1{
+            animation-delay:-109.671s;
+            animation-name:seconds_one;
+        }
+        .so2{
+            animation-delay:-108.671s;
+            animation-name:seconds_one;
+        }
+        .so3{
+            animation-delay:-107.671s;
+            animation-name:seconds_one;
+        }
+        .so4{
+            animation-delay:-106.671s;
+            animation-name:seconds_one;
+        }
+        .so5{
+            animation-delay:-105.671s;
+            animation-name:seconds_one;
+        }
+        .so6{
+            animation-delay:-104.671s;
+            animation-name:seconds_one;
+        }
+        .so7{
+            animation-delay:-103.671s;
+            animation-name:seconds_one;
+        }
+        .so8{
+            animation-delay:-102.671s;
+            animation-name:seconds_one;
+        }
+        .so9{
+            animation-delay:-101.671s;
+            animation-name:seconds_one;
+        }
+        .st0{
+            animation-delay:-160.671s;
+            animation-name:seconds_ten;
+        }
+        .st1{
+            animation-delay:-150.671s;
+            animation-name:seconds_ten;
+        }
+        .st2{
+            animation-delay:-140.671s;
+            animation-name:seconds_ten;
+        }
+        .st3{
+            animation-delay:-130.671s;
+            animation-name:seconds_ten;
+        }
+        .st4{
+            animation-delay:-120.671s;
+            animation-name:seconds_ten;
+        }
+        .st5{
+            animation-delay:-110.671s;
+            animation-name:seconds_ten;
+        }
+        .m0{
+            animation-delay:-700.671s;
+            animation-name:minutes;
+        }
+        .m1{
+            animation-delay:-640.671s;
+            animation-name:minutes;
+        }
+        .m2{
+            animation-delay:-580.671s;
+            animation-name:minutes;
+        }
+        .m3{
+            animation-delay:-520.671s;
+            animation-name:minutes;
+        }
+        .m4{
+            animation-delay:-460.671s;
+            animation-name:minutes;
+        }
+        .m5{
+            animation-delay:-400.671s;
+            animation-name:minutes;
+        }
+        .m6{
+            animation-delay:-340.671s;
+            animation-name:minutes;
+        }
+        .m7{
+            animation-delay:-280.671s;
+            animation-name:minutes;
+        }
+        .m8{
+            animation-delay:-220.671s;
+            animation-name:minutes;
+        }
+        .m9{
+            animation-delay:-160.671s;
+            animation-name:minutes;
+        }
+        </style>
+    
+    <image href="https://i.scdn.co/image/ab67616d00001e0290b4e1905b1fc48c537ec053" height="230" width="230" x="40" y="40" />
+	<text class="track" x="40" y="293">After The Storm (feat. Tyler, The Creator &#x26; Bootsy Collins)</text>
+    <text class="artist" x="40" y="310">Kali Uchis</text>
+    <rect x="30" y="330" width="250" height="3" rx="2" fill="#696969" />
+    <rect x="30" y="330" width="121.31725587359125" height="3" rx="2" fill="#495151" class="startWidth"/>
+    <circle r="5" cx="30" cy="331" fill="#969696" class="startMoving"></circle>
+    <text class="time" y="350" x="270">3:27</text>
+    <rect height="16" width="4" y="345" x="150" stroke="#21ca1e" fill="#1bde18"></rect> <rect height="16" width="4" y="345" x="160" stroke="#21ca1e" fill="#1bde18"></rect>
+    <svg role="img" height="16" width="16" y="345" x="100" aria-hidden="true" viewBox="0 0 16 16" fill="#21ca1e" data-encore-id="icon"><path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"></path><path d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"></path></svg>
+    <svg role="img" height="16" width="16" y="346" x="196" aria-hidden="true" viewBox="0 0 16 16" fill="#21ca1e" data-encore-id="icon"><path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path></svg>
+    <text class="one" y="355" x="202" style="opacity:0">1</text>
+    <image href="redirect.png" width="20" height="20" y="375" x="147"></image>
+    <text y="350" x="17" class="min time m0">0:</text>
+    <text y="350" x="17" class="min time m1">1:</text>
+    <text y="350" x="17" class="min time m2">2:</text>
+    <text y="350" x="17" class="min time m3">3:</text>
+    <text y="350" x="17" class="min time m4">4:</text>
+    <text y="350" x="17" class="min time m5">5:</text>
+    <text y="350" x="17" class="min time m6">6:</text>
+    <text y="350" x="17" class="min time m7">7:</text>
+    <text y="350" x="17" class="min time m8">8:</text>
+    <text y="350" x="17" class="min time m9">9:</text>
+    
+    <text y="350" x="27" class="sec_ten time st0">0</text>
+    <text y="350" x="27" class="sec_ten time st1">1</text>
+    <text y="350" x="27" class="sec_ten time st2">2</text>
+    <text y="350" x="27" class="sec_ten time st3">3</text>
+    <text y="350" x="27" class="sec_ten time st4">4</text>
+    <text y="350" x="27" class="sec_ten time st5">5</text>
+
+    <text y="350" x="34" class="sec_one time so0">0</text>
+    <text y="350" x="34" class="sec_one time so1">1</text>
+    <text y="350" x="34" class="sec_one time so2">2</text>
+    <text y="350" x="34" class="sec_one time so3">3</text>
+    <text y="350" x="34" class="sec_one time so4">4</text>
+    <text y="350" x="34" class="sec_one time so5">5</text>
+    <text y="350" x="34" class="sec_one time so6">6</text>
+    <text y="350" x="34" class="sec_one time so7">7</text>
+    <text y="350" x="34" class="sec_one time so8">8</text>
+    <text y="350" x="34" class="sec_one time so9">9</text>
+    <script>
+    <![CDATA[
+        var getTextWidth = (el)=>{
+            return el.getBBox().width
+        }
+        var artist = document.querySelector(".artist");
+        var track = document.querySelector(".track");
+        var bb = getTextWidth(artist);
+
+        if(bb > 230){
+            let size = 18 - 0.25;
+            for(let i = 0; i < Math.floor(bb); i++){
+                artist.style.fontSize = size.toString()+"px";
+                getTextWidth(artist) > 230 ? size-= 0.25 : i = Math.floor(bb);
+            }
+        }
+
+        bb = getTextWidth(track) -20;
+        console.log(bb);
+        if(bb > 230){
+            for(let i = 0; i < Math.floor(bb); i++){
+                !i ? track.style.fontSize = "18px" : track.textContent = track.textContent.substring(0, track.textContent.length - (i > 1 ? 4: 1)) + "...";
+                getTextWidth(track)-20 < 230 ? i = Math.floor(bb):i;
+            }
+        }
+
+
+    ]]>
+    </script>
+</svg>
